@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body>
+	<div class="wrapper">
+		<form id="login" method="post" ">       
+			<h1 style="color: rgb(48, 40, 190);">Login Neil's system</h1>
+			<input id="username" type="text" placeholder="Username" 
+				autofocus autocomplete="off"
+				required onkeyup="refreshButton()"
+			/>
+			<input id="password" type="password" placeholder="Password"
+				required onkeyup="refreshButton()"
+			/>      
+			<button type="submit" id="loginNow" onclick="loginToSystem()">Login now</button>   
+		</form>
+		<div id="error_meesage" style="color: rgba(255, 0, 0, 0.781);"></div>
+		<div style="margin-top: 20px; color: rgb(64, 164, 246); font-size: 0.7rem; padding-left: 20px;">
+			<span><b class="note">
+				Note : </b>For this demo use following username and password. <br/>
+				<ol class="valid">User Name : Admin<br/>Password : 0000</ol>
+			</span>
+		</div>
+	</div>
+	<script src="login.js"></script>
+</body>
+</html>
